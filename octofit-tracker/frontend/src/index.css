@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Sora:wght@400;500;700&display=swap');
+
+:root {
+  --bg-top: #fef5de;
+  --bg-mid: #e8f4ed;
+  --bg-bottom: #e5efe9;
+  --text: #213036;
+  --muted: #3b4f57;
+  --panel: #fffef7;
+  --line: #dfd6c1;
+  --sans: 'Sora', 'Trebuchet MS', sans-serif;
+  --heading: 'Chakra Petch', 'Trebuchet MS', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: var(--sans);
+  background:
+    radial-gradient(1300px 500px at 20% -20%, var(--bg-top), transparent 68%),
+    radial-gradient(1000px 460px at 85% -10%, #ffe2af, transparent 60%),
+    linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-bottom) 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
