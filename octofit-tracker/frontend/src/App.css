@@ -135,6 +135,184 @@ h3 {
   background: #0e3d35;
 }
 
+.action-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ghost-btn {
+  margin-left: 0.6rem;
+  background: #f0d7a1;
+  color: #3a2a11;
+}
+
+.ghost-btn:hover {
+  background: #eac886;
+}
+
+.check-in-row {
+  margin-top: 0.85rem;
+  max-width: 320px;
+}
+
+.check-in-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #345045;
+  margin-bottom: 0.3rem;
+}
+
+.check-in-input {
+  width: 100%;
+  border: 1px solid #c7bda9;
+  border-radius: 0.6rem;
+  background: #fffcf2;
+  color: #17303a;
+  padding: 0.45rem 0.55rem;
+}
+
+.check-in-input:focus {
+  outline: 2px solid #1a5d4f;
+  outline-offset: 1px;
+}
+
+.active-session-row {
+  margin-top: 0.55rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.active-session-actions {
+  display: inline-flex;
+  gap: 0.45rem;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.pause-inline-btn {
+  border: 1px solid #4769af;
+  color: #233b6e;
+  background: #dce8ff;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 700;
+}
+
+.pause-inline-btn:hover {
+  background: #c7dbff;
+}
+
+.check-out-inline-btn {
+  border: 1px solid #a96d14;
+  color: #54380d;
+  background: #f5d798;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 700;
+}
+
+.check-out-inline-btn:hover {
+  background: #f1cc80;
+}
+
+.check-in-status {
+  margin-top: 0.8rem;
+  display: inline-block;
+  background: #e4f5e8;
+  color: #0f5132;
+  border: 1px solid #a7d8b5;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.timer-status {
+  margin-left: 0;
+  margin-right: 0.45rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  background: #edf1ff;
+  color: #28306d;
+  border-color: #b9c2f8;
+}
+
+.progress-card {
+  cursor: pointer;
+}
+
+.progress-hint {
+  margin: 0.35rem 0 0.65rem;
+  font-size: 0.84rem;
+}
+
+.session-log-card {
+  grid-column: span 6;
+}
+
+.log-filters {
+  margin-top: 0.75rem;
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  border: 1px solid #c8bea8;
+  background: #fffaf0;
+  color: #3d4044;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;
+}
+
+.filter-btn.active {
+  background: #11493f;
+  border-color: #11493f;
+  color: #f8fce8;
+}
+
+.session-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.session-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  border: 1px solid #e5dbc8;
+  border-radius: 0.75rem;
+  background: #fffaf0;
+}
+
+.session-title {
+  font-weight: 700;
+  color: #1f2f33;
+  margin-bottom: 0.2rem;
+}
+
+.delete-btn {
+  border: 1px solid #d16363;
+  color: #8e2222;
+  background: #ffeaea;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 700;
+}
+
+.delete-btn:hover {
+  background: #ffd7d7;
+}
+
 .bar-track {
   height: 10px;
   border-radius: 999px;
@@ -151,6 +329,43 @@ h3 {
 .section-card h2 {
   margin: 0.5rem 0;
   font-size: 2rem;
+}
+
+.leaderboard-card {
+  grid-column: span 6;
+}
+
+.leaderboard-list {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.leaderboard-item {
+  background: #fffaf0;
+  border: 1px solid #dfd4bf;
+  border-radius: 0.8rem;
+  padding: 0.85rem;
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.leaderboard-header h3 {
+  margin: 0;
+}
+
+.activity-list {
+  margin: 0.65rem 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.35rem;
 }
 
 .reveal {
@@ -204,5 +419,29 @@ h3 {
 
   .metric-card {
     grid-column: span 6;
+  }
+
+  .ghost-btn {
+    margin-left: 0.35rem;
+  }
+
+  .timer-status {
+    margin-left: 0;
+    margin-top: 0.45rem;
+  }
+
+  .session-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .active-session-row {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+
+  .leaderboard-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
